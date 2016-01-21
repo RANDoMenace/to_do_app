@@ -1,5 +1,7 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h2>Edit todo</h2>
+<%= form-for (@link) do |f| %>
+	<%= f.text_field :item %>
+	<%= f.submit %>
 
 <%= @todos.each do |f| %>
 
